@@ -27,11 +27,17 @@ IDE：pycharm
 ##### /Disk
 
 block0 superblock # 超级块，存储文件系统信息
+
 block1 GTD # 块组描述块，描述块内信息
+
 block2 BlockBitMap # 块图，记录整个磁盘块的使用
+
 block3 InodeTable # Inode表，记录全部文件inode结点信息
+
 block4 / # 分配给根目录的数据块（同时也是root用户的家目录）
+
 block5 /user # 用户user的家目录
+
 block6 user info # 用户信息表，存储所有用户信息
 
 >Disk目录是模拟的磁盘目录，总共分配了32个数据块，每个数据块大小为1k。
